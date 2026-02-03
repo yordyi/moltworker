@@ -35,7 +35,31 @@ This project packages OpenClaw to run in a [Cloudflare Sandbox](https://develope
 
 ![moltworker architecture](./assets/architecture.png)
 
-## Quick Start
+## One-Click Deploy Script (Recommended for Beginners)
+
+For the easiest setup experience, use our interactive deployment script:
+
+```bash
+# macOS / Linux
+curl -fsSL https://raw.githubusercontent.com/cloudflare/moltworker/main/scripts/deploy.sh | bash
+```
+
+The script will guide you through:
+1. Forking the repository to your GitHub account
+2. Setting up GitHub Actions for automatic deployments
+3. Configuring Cloudflare credentials
+4. Setting up AI service (Anthropic or AI Gateway)
+5. Optional: Telegram, Discord, R2 storage
+
+**Requirements before running:**
+- GitHub account (with [GitHub CLI](https://cli.github.com/) installed)
+- Cloudflare account ([Workers Paid plan](https://www.cloudflare.com/plans/developer-platform/), $5/month)
+- [Node.js](https://nodejs.org/) installed
+- Anthropic API key or AI Gateway credentials
+
+---
+
+## Quick Start (Manual)
 
 _Cloudflare Sandboxes are available on the [Workers Paid plan](https://dash.cloudflare.com/?to=/:account/workers/plans)._
 
